@@ -101,7 +101,7 @@ class Util {
 		return (SubStr(token, 11, (StrLen(token) - 12)))
 	}
 	; API CALL FUNCTION WITH AUTO-AUTH/HEADERS
-	CustomCall(method, url, HeaderArray := "", noTimeOut) {
+	CustomCall(method, url, HeaderArray := "", noTimeOut := false) {
 		if !(noTimeOut) {
 			this.CheckTimeout()
 
