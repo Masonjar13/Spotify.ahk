@@ -104,7 +104,7 @@ class Util {
 	CustomCall(method, url, HeaderArray := "", noTimeOut := false) {
 		if !(noTimeOut) {
 			this.CheckTimeout()
-
+		}
 		if !((InStr(url, "https://api.spotify.com")) || (InStr(url, "https://accounts.spotify.com/api/"))) {
 			url := "https://api.spotify.com/v1/" . url
 		}
